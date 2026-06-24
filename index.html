@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
+<title>CU Staff Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>Staff Career Dashboard</h1>
+
+</header>
+
+<section class="profile">
+
+<h2 id="name">Kay Daniels</h2>
+
+<p><strong>Staff ID:</strong>
+<span id="staffId">CU2025ICT001</span></p>
+
+<p><strong>Title:</strong>
+<span id="title">Head ICT Services</span></p>
+
+<p><strong>Institution:</strong>
+<span id="institution">
+Covenant University
+</span></p>
+
+</section>
+
+<section class="cards">
+
+<button onclick="generateCV()">
+Generate CV
+</button>
+
+<button onclick="generateResume()">
+Generate Resume
+</button>
+
+<button onclick="searchJobs()">
+Find Jobs
+</button>
+
+<button onclick="openTelegramBot()">
+Telegram Bot
+</button>
+
+</section>
+
+<section>
+
+<h2>AI Career Assistant</h2>
+
+<textarea id="prompt"></textarea>
+
+<button onclick="askAI()">
+Ask AI
+</button>
+
+<div id="response"></div>
+
+</section>
+
+</div>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
